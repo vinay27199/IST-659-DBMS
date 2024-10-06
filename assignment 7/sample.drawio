@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2024-02-29T00:25:00.909Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="sIZlLrBAShvBVLsBPZAX" version="23.1.8" type="device">
+  <diagram name="Page-1" id="RC1zz48kmKA6JToc0as1">
+    <mxGraphModel dx="1354" dy="690" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-28" value="customer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="1" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-29" value="+ email [RU]&lt;br&gt;+ min price [R]&lt;br&gt;+ max price [R]&lt;br&gt;+ city [R]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Ng-u2RkwrmwCbjsWELG3-28">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-30" value="contractor" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="121" y="1" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-31" value="+ email [RU]&lt;br&gt;+ rate [R]&lt;br&gt;+ city [R]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Ng-u2RkwrmwCbjsWELG3-30">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-32" value="job" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="214" width="160" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-33" value="+ submitted by [R]&lt;br&gt;+ requested date [R]&lt;br&gt;+ contracted by&amp;nbsp;&lt;br&gt;+ service rate&lt;br&gt;+ estimated date&lt;br&gt;+ completed date" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="Ng-u2RkwrmwCbjsWELG3-32">
+          <mxGeometry y="50" width="160" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-34" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.019;entryY=0.112;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" edge="1" parent="1" source="Ng-u2RkwrmwCbjsWELG3-29" target="Ng-u2RkwrmwCbjsWELG3-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-187" y="244" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-37" value="submits/&lt;br&gt;submitted by" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="Ng-u2RkwrmwCbjsWELG3-34">
+          <mxGeometry x="-0.3818" y="13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-35" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.594;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.988;exitY=0.143;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=ERzeroToOne;endFill=0;startArrow=ERzeroToMany;startFill=0;" edge="1" parent="1" source="Ng-u2RkwrmwCbjsWELG3-33" target="Ng-u2RkwrmwCbjsWELG3-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="287" y="299" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ng-u2RkwrmwCbjsWELG3-38" value="contracts/&lt;br&gt;contracted by" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="Ng-u2RkwrmwCbjsWELG3-35">
+          <mxGeometry x="0.5236" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

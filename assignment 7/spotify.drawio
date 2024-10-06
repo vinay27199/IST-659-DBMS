@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net" modified="2024-03-04T23:56:28.477Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="vgOSgc4g65BV3TBuYlvA" version="24.0.0" type="device">
+  <diagram name="Page-1" id="XpqTT7pBagiN9khMRubh">
+    <mxGraphModel dx="954" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-1" value="user" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-2" value="+ name [RC]&lt;br&gt;+ email [RU]&lt;br&gt;+ generes [M]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="_bISmxYlfv5Asu_Bw-LZ-1" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-3" value="playlist" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-4" value="+ name [R]&lt;br&gt;+ date created [R]&lt;br&gt;+ user [R]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="_bISmxYlfv5Asu_Bw-LZ-3" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-5" value="history" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="590" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-6" value="+ date listened [R]&lt;br&gt;+ song title [R]&lt;br&gt;+ listened user [RC]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="_bISmxYlfv5Asu_Bw-LZ-5" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-7" target="_bISmxYlfv5Asu_Bw-LZ-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;listened by /&lt;br&gt;listens to&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-16" vertex="1" connectable="0">
+          <mxGeometry x="0.5459" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-7" target="_bISmxYlfv5Asu_Bw-LZ-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-31" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;added in /&lt;br&gt;contains&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-19" vertex="1" connectable="0">
+          <mxGeometry x="0.0364" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-7" value="song" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="590" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-8" value="+ title [R]&lt;br&gt;+ artist [RC]&lt;br&gt;+ genres [M]&lt;br&gt;+ length [R]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="_bISmxYlfv5Asu_Bw-LZ-7" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-9" value="song-playlist" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="360" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-25" value="+ song title [M]&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="_bISmxYlfv5Asu_Bw-LZ-9" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-11" value="user-song" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="390" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-12" value="+ datetime [R]" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="_bISmxYlfv5Asu_Bw-LZ-11" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-2" target="_bISmxYlfv5Asu_Bw-LZ-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;listened song recorded in /&lt;br&gt;records song listened by&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.0667" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-2" target="_bISmxYlfv5Asu_Bw-LZ-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="200" />
+              <mxPoint x="590" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2vwrFOVKkSn1g-hqqpB-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Creates/&lt;/font&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Created by&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_bISmxYlfv5Asu_Bw-LZ-14">
+          <mxGeometry x="-0.1457" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-6" target="_bISmxYlfv5Asu_Bw-LZ-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-32" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;recorded in /&lt;br&gt;records&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-15" vertex="1" connectable="0">
+          <mxGeometry x="-0.0895" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERzeroToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-2" target="_bISmxYlfv5Asu_Bw-LZ-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-28" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;l&lt;font style=&quot;font-size: 14px;&quot;&gt;li&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;stens to /&lt;br&gt;listened by&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-17" vertex="1" connectable="0">
+          <mxGeometry x="0.1365" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="_bISmxYlfv5Asu_Bw-LZ-4" target="_bISmxYlfv5Asu_Bw-LZ-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;contains /&lt;br&gt;added in&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="_bISmxYlfv5Asu_Bw-LZ-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.04" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_bISmxYlfv5Asu_Bw-LZ-33" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 24px;&quot;&gt;vchand03&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="445" y="90" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
